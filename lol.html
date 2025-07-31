@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Page</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <style>
+    * {
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background: linear-gradient(to right, #4facfe, #00f2fe);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 120vh;
+    }
+
+    .login-container {
+      background-color: #f0f7ff;
+      padding: 2rem;
+      
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+      width: 400px;
+      text-align: center;
+    }
+
+    .login-container h2 {
+      color: #2c3e50;
+      margin-bottom: 0.4rem;
+    }
+
+    .login-container p {
+      margin-bottom: 1.5rem;
+      color: #7f8c8d;
+      font-size: 0.9rem;
+    }
+
+    input[type="text"], input[type="password"] {
+      width: 100%;
+      padding: 0.7rem;
+      margin-bottom: 1rem;
+      border: 1px solid #ced6e0;
+      border-radius: 6px;
+    }
+
+    .remember {
+      display: flex;
+      align-items: center;
+      margin-bottom: 1rem;
+    }
+
+    .remember input {
+      margin-right: 0.5rem;
+    }
+
+    .sign-in-btn {
+      background-color: #1e3799;
+      color: white;
+      border: none;
+      padding: 0.8rem;
+      width: 100%;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 1rem;
+    }
+
+    .sign-in-btn:hover {
+      background-color: #0c2461;
+    }
+
+    .extra-links {
+      margin-top: 1rem;
+      font-size: 0.85rem;
+    }
+
+    .extra-links a {
+      color: #2980b9;
+      text-decoration: none;
+      margin: 0 0.3rem;
+    }
+
+    .social-login {
+        display: flex;
+        align-items: center;
+        gap: 25px; 
+        justify-content: center;
+        margin-top: 20px;
+    }
+
+    hr{
+        margin-top: 1rem;
+    }
+
+    .social-login .login-text {
+        font-size: 16px;
+        font-weight: 500;
+        color: #333;
+    }
+
+    .social-login a {
+        color: #333;
+        text-decoration: none;
+        font-size: 20px;
+        transition: color 0.3s;
+    }
+
+    .social-login a:hover {
+        color: #007bff; 
+    }
+
+    .bottom-buttons {
+      margin-top: 2rem;
+      display: flex; 
+      justify-content: space-between;
+    }
+
+    .bg-btn, .back-btn {
+      padding: 0.6rem 1.2rem;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 0.9rem;
+    }
+
+    .bg-btn {
+      background-color: #e74c3c;
+      color: white;
+    }
+
+    .bg-btn:hover {
+      background-color: #c0392b;
+    }
+
+    .back-btn {
+      background-color: #bdc3c7;
+      color: #2c3e50;
+    }
+  </style>
+</head>
+<body>
+  <div class="login-content">
+    <div class="login-container">
+        <h2>Account SignUp</h2>
+        <p>Sign uo to create a new account</p>
+        <input type="text" placeholder="Fullname">
+        <input type="text" placeholder="Email">
+        <input type="text" placeholder="Username">
+        <input type="password" placeholder="Password">
+        <input type="password" placeholder="Confirm Password">
+        <div class="remember">
+        <input type="checkbox" id="remember">
+        <label for="remember">Remember me</label>
+        </div>
+        <button class="sign-in-btn">Sign In</button>
+        <div class="extra-links">
+        <span>Already Have An Account?</span>
+        <span>|</span>
+        <a href="login.html">Login</a>
+        </div>
+        <hr class="custom-line">
+        <div class="social-login">
+            <span class="login-text">Signup with  :</span>
+            <a href="https://web.facebook.com/r.php?entry_point=login"><i class="fab fa-facebook-f"></i></a>
+            <a href=""><i class="fab fa-twitter"></i></a>
+            <a href="https://accounts.google.com/lifecycle/steps/signup/name?continue=http://support.google.com/mail/answer/56256?hl%3Den&dsh=S386455011:1753880526690804&ec=GAZAdQ&flowEntry=SignUp&flowName=GlifWebSignIn&hl=en&ifkv=AdBytiPUCTz7XVtJKQvgzqq_REWtAFVgiyECrzB5P9HUy4gcKLY7n5r_qIv8quK_O9UyfoGVKXfr2g&TL=ALgCv6xcigna6Uv5k9zV5jAIRjLY4qOgRZK8vOb5suolPCoGANY1qzXoO0MP6uTN"><i class="fab fa-google"></i></a>
+            <a href="https://www.instagram.com/accounts/emailsignup/"><i class="fab fa-instagram"></i></a>
+        </div>
+    </div>
+     <div class="bottom-buttons">
+      <button class="bg-btn">Background image</button>
+      <button class="back-btn">Back</button>
+    </div>
+  </div>
+</body>
+</html>
